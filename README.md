@@ -140,4 +140,4 @@ No geral, o teste permitiu explorar boas práticas de arquitetura frontend e dem
 
 Este projeto foi desenvolvido com foco em clareza, organização e boas práticas, priorizando legibilidade e facilidade de manutenção.
 
-Obrigado pela oportunidade!
+PR criada para revisão final do teste técnico.
