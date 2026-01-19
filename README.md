@@ -53,22 +53,48 @@ src/
 ├─ App.vue
 └─ main.js
 
+---
 
+## 🗄️ API Mock (JSON Server)
+
+Este projeto utiliza o **JSON Server** para simular uma API REST local durante o desenvolvimento.
+
+O arquivo `db.json` contém os dados de:
+- Usuários
+- Categorias
+- Tarefas
+
+Essa abordagem foi adotada para permitir o desenvolvimento e teste das funcionalidades sem dependência de um backend real.
+
+### Executando o JSON Server
+
+Em um terminal separado, na raiz do projeto, execute:
+
+```bash
+npx json-server --watch db.json --port 3000
+```
 ---
 
 ## ⚙️ Como executar o projeto localmente
 
 ### 1. Clonar o repositório
 
+```bash
 git clone <URL_DO_REPOSITORIO>
-
+```
+```bash
 cd bext-teste
-
+```
+```bash
 npm install
-
+```
+```bash
 npm run dev
+```
 
+```bash
 http://localhost:5173
+```
 
 ## 🔐 Login
 
