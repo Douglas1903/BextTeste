@@ -68,3 +68,4 @@ npm run dev
 
 http://localhost:5173/
 
+PR criada para revisão final do teste técnico.
