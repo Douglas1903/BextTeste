@@ -1,0 +1,148 @@
+.edit-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 12, 16, 0.55);
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-items: center;
+  z-index: 999;
+}
+
+.edit-modal {
+  width: 680px;
+  max-width: calc(100vw - 32px);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 24, 30, 0.92),
+    rgba(15, 17, 21, 0.95)
+  );
+  border: 1px solid #22252c;
+  border-radius: 16px;
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.edit-header {
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #22252c;
+}
+
+.title-modal {
+    color: #eaeaea;
+}
+
+.edit-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.close-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #c9cbd1;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: #2a2d34;
+}
+
+/* Body */
+.edit-body {
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 11px;
+  color: #8b909a;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.field input,
+.field textarea,
+.field select {
+  background: #15181e;
+  border: 1px solid #22252c;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #eaeaea;
+  font-size: 13px;
+  outline: none;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color: #2563eb;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* Footer */
+.edit-footer {
+  padding: 14px 18px;
+  border-top: 1px solid #22252c;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.secondary-btn {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #2a2d34;
+  color: #c9cbd1;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.primary-btn {
+  height: 34px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: #2563eb;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #1e4fd6;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "id": "9e20",
+      "title": "tbetbewbw",
+      "description": "",
+      "status": "todo",
+      "priority": "Baixa",
+      "date": "2026-01-19",
+      "category": "Nova Lista"
+    },
+    {
+      "title": "sadevadsvwr",
+      "description": "",
+      "status": "done",
+      "priority": "Baixa",
+      "date": "2026-01-19T03:00:00.000Z",
+      "category": "Nova Lista",
+      "id": "f600"
+    },
+    {
+      "id": "e65a",
+      "title": "evqecvqeockmqe",
+      "description": "",
+      "status": "todo",
+      "priority": "Baixa",
+      "date": "2026-01-19T03:00:00.000Z",
+      "category": "Nova Lista 2"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "teste@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "categories": [
+    {
+      "id": "661d",
+      "name": "Nova Lista"
+    },
+    {
+      "id": "260f",
+      "name": "Nova Lista 2"
+    }
+  ]
+}

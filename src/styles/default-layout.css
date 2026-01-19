@@ -1,0 +1,138 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+  background: #14151a;
+}
+
+.sidebar {
+  width: 72px;
+  background: linear-gradient(180deg, #2c2f36, #1f2228);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.sidebar-top {
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.sidebar-middle {
+  flex: 1;
+}
+
+.sidebar-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.add-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 30%;
+  border: none;
+  background: #fff;
+  color: #1f2228;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.exit-btn {
+  background: #15181e;
+  color: #c9cbd1;
+  border: 1px solid #22252c;
+}
+
+.exit-btn:hover {
+  transform: translateY(-1px);
+  background: #1a1d23;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.exit-icon {
+  font-size: 16px;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+
+.plus-button {
+  font-size: 24px;
+  line-height: 0;
+  margin-bottom: 20%;
+}
+
+
+.add-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  background: #14151a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.95), rgba(34, 197, 94, 0.85));
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo-mark::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border-radius: 9px;
+  background: rgba(15, 17, 21, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.logo-mark::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  width: 14px;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 0 rgba(255, 255, 255, 0.65);
+  opacity: 0.9;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: rgba(234, 234, 234, 0.92);
+}
